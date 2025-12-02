@@ -337,6 +337,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.5, y: 0.35, z: 0.5}
   m_LocalScale: {x: 10, y: 10, z: 10}
+<<<<<<< HEAD
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -498,6 +499,8 @@ Transform:
   m_LocalPosition: {x: 5.52, y: 1.62, z: 1.77981}
   m_LocalScale: {x: 0.44, y: 1, z: 1}
 >>>>>>> 6d7b373ad86a030917b9fcfa0fd767bac37387be
+=======
+>>>>>>> parent of 3c4e94b (Ranga Pubes Updoot)
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
