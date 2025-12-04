@@ -42,7 +42,5 @@ public class CameraLook : MonoBehaviour
 
         // Change camera rotation
         cameraTransform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
-
-        Debug.Log("MouseX: " + mouseX + " MouseY: " + mouseY);
     }
 }
