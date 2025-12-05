@@ -34,24 +34,45 @@ public class InputManager : MonoBehaviour
             // Check if its a battery slot
             if (clicked.TryGetComponent(out BatterySlot slot))
             {
-                //GameManager.OnSlotClicked(slot.slotType);
-                Debug.Log($"Clicked on a Slot: {slot.slotType}");
+                Debug.Log($"[InputManager] Clicked on a Slot: {slot.slotType}");
+
+                if (GameManager.Instance != null)
+                {
+                    GameManager.Instance.OnSlotClicked(slot.slotType);
+                } else
+                {
+                    Debug.LogWarning("No GameManager instance found in scene");
+                }
                 return;
             }
 
             // Check if its a battery
             if (clicked.TryGetComponent(out BatteryObject battery))
             {
-                //GameManager.OnBatteryClicked(battery.batteryType);
-                Debug.Log($"Clicked on a Battery: {battery.batteryType}");
+                Debug.Log($"[InputManager] Clicked on a Battery: {battery.batteryType}");
+
+                if (GameManager.Instance != null)
+                {
+                    GameManager.Instance.OnBatteryClicked(battery.batteryType);
+                } else
+                {
+                    Debug.LogWarning("No GameManager instance found in scene");
+                }
                 return;
             }
 
             // Check if its an item
             if (clicked.TryGetComponent(out ItemObject item))
             {
-                //GameManager.OnItemClicked(item.itemID);
-                Debug.Log($"Clicked on an Item: {item.itemID}");
+                Debug.Log($"[InputManager] Clicked on an Item: {item.itemID}");
+
+                if (GameManager.Instance != null)
+                {
+                    GameManager.Instance.OnItemClicked(item.itemID);
+                } else
+                {
+                    Debug.LogWarning("No GameManager instance found in scene");
+                }
                 return;
             }
         }

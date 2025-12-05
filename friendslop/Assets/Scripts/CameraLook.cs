@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CameraLook : MonoBehaviour
 {
+    [Header("Camera Settings")]
     public float mouseSensitivity = 200f;
     private Transform cameraTransform;
     float xRotation = 0f;
